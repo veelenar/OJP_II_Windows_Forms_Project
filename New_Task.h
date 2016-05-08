@@ -1,6 +1,6 @@
 #pragma once
 
-namespace WindowsFormApplication1 {
+namespace Task_Manager_v2 {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -10,12 +10,12 @@ namespace WindowsFormApplication1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for Form1
+	/// Summary for NewTask
 	/// </summary>
-	public ref class Form1 : public System::Windows::Forms::Form
+	public ref class NewTask : public System::Windows::Forms::Form
 	{
 	public:
-		Form1(void)
+		NewTask(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace WindowsFormApplication1 {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~Form1()
+		~NewTask()
 		{
 			if (components)
 			{
@@ -48,13 +48,18 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Form1";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->SuspendLayout();
+			// 
+			// NewTask
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Name = L"NewTask";
+			this->Text = L"Task Manager";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
 	};
 }
-

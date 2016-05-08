@@ -1,9 +1,9 @@
 // WindowsFormApplication1.cpp : main project file.
 
 #include "stdafx.h"
-#include "Form1.h"
+#include "Task_Manager.h"
 
-using namespace WindowsFormApplication1;
+using namespace Task_Manager_v2;
 
 [STAThreadAttribute]
 int main(array<System::String ^> ^args)
@@ -13,6 +13,6 @@ int main(array<System::String ^> ^args)
 	Application::SetCompatibleTextRenderingDefault(false); 
 
 	// Create the main window and run it
-	Application::Run(gcnew Form1());
+	Application::Run(gcnew Task_Manager());
 	return 0;
 }
